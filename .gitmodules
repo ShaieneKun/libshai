@@ -5,6 +5,7 @@
 [submodule "LibShai-Frontend"]
 	path = LibShai-Frontend
 	url = git@github.com:yasmin-liban/LibShai-Frontend.git
+
 [submodule "LibShai-Automation"]
 	path = LibShai-Automation
 	url = git@github.com:ShaieneKun/LibShai-Automation.git

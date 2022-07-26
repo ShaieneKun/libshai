@@ -9,6 +9,13 @@ It's created by software developers and artists, and we want to express the best
 
 ## Setup
 
+First of all, clone the repositories as submodules
+
+```bash
+git submodule update --init --recursive
+```
+Then run the script `setup_submodules.sh`
+
 libshai likes containers, so `podman` or `docker` are our tools
 
 Install your preferred one and run
