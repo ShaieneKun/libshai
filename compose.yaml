@@ -1,4 +1,5 @@
 services:
+
   django:
     build:
       context: ./LibShai-Backend
@@ -8,6 +9,13 @@ services:
       - 8000:8000
     volumes:
       - ./LibShai-Backend:/app
+    environment:
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+      AWS_STORAGE_BUCKET_NAME: ${AWS_STORAGE_BUCKET_NAME}
+      USE_AWS_S3: ${USE_AWS_S3}
+      DEBUG: ${DEBUG}
+
   vue:
     build:
       context: ./LibShai-Frontend
